@@ -1,0 +1,11 @@
+# Lightweight requirements for Vercel deployment (Remote Mode only)
+# Heavy packages (torch, llama-cpp-python, onnxruntime) are excluded
+# to stay within Vercel's 250MB function size limit.
+# Inference is handled by a remote backend server.
+
+gradio>=5.49.1
+numpy
+soundfile
+PyYAML
+requests
+tqdm
